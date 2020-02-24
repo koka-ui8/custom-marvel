@@ -1,12 +1,14 @@
 language: node_js
 node_js:
   - "stable"
+
 script:
   - npm test
+
 deploy:
   provider: heroku
   api_key: 4fc708b6-8d2d-4b6f-a573-c7e3375c35d4
-  app: custom-marvel
+  app: custom-marvel-service
 
 on:
   branch: master
