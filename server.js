@@ -8,14 +8,18 @@ app.use(express.json());
  
 //READ Request Handlers
 app.get('/', (req, res) => {
-res.send('Welcome to Marvel REST API with Node.js.');
+  res.send('Welcome to Marvel REST API with Node.js.');
 });
 
 //  Get API to read the characters JSON and sending as response
 app.get('/api/v1/characters', (req,res)=> {
-res.send(marvelCharacters);
+  res.send(marvelCharacters);
 });
  
+// Health Check API
+app.get('/api/v1/health', (req, res)=> {
+  res.send({status: "UP"});
+});
 
 // listen for requests
 const port = process.env.PORT || 5000;
