@@ -1,0 +1,33 @@
+{
+  "name": "custom-marvel",
+  "version": "1.0.0",
+  "description": "Creating custom marvel service",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --require babel-register tests/*.js --exit",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koka-ui8/custom-marvel.git"
+  },
+  "author": "sowjanya koka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koka-ui8/custom-marvel/issues"
+  },
+  "homepage": "https://github.com/koka-ui8/custom-marvel#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.1.1",
+    "nodemon": "^2.0.2"
+  }
+}
